@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Pompa
     - SendData
     - VisualChangesPh
+    - WaterPosition
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -19,8 +20,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -28,6 +31,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -65,47 +69,51 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1508}
+      Script: {instanceID: 5532}
     - Class: 114
-      Script: {instanceID: 1538}
+      Script: {instanceID: 5562}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 5622}
     - Class: 114
-      Script: {instanceID: 1622}
+      Script: {instanceID: 5644}
     - Class: 114
-      Script: {instanceID: 1728}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 1750}
+      Script: {instanceID: 5770}
     - Class: 114
-      Script: {instanceID: 1896}
+      Script: {instanceID: 5914}
     - Class: 114
-      Script: {instanceID: 1978}
+      Script: {instanceID: 5998}
     - Class: 114
-      Script: {instanceID: 2030}
+      Script: {instanceID: 6050}
     - Class: 114
-      Script: {instanceID: 2058}
+      Script: {instanceID: 6076}
     - Class: 114
-      Script: {instanceID: 2164}
+      Script: {instanceID: 6182}
     - Class: 114
-      Script: {instanceID: 2334}
+      Script: {instanceID: 6356}
     - Class: 114
-      Script: {instanceID: 2446}
+      Script: {instanceID: 6466}
     - Class: 114
-      Script: {instanceID: 2488}
+      Script: {instanceID: 6506}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 6628}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 6812}
     - Class: 114
-      Script: {instanceID: 2882}
+      Script: {instanceID: 6900}
     - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 7418}
     - Class: 114
-      Script: {instanceID: 3810}
+      Script: {instanceID: 7428}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 7832}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 7848}
+    - Class: 114
+      Script: {instanceID: 8118}
+    - Class: 114
+      Script: {instanceID: 103542}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -123,6 +131,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UIElements
+    className: PanelRaycaster
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -221,6 +235,12 @@ ScriptsOnlyBuild:
     className: Pompa
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UIElements
+    className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
       Hash: 41b08b8a12e1bf8c44ecb809537cb84a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -263,6 +283,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Dead
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -293,7 +319,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: a74405a4829a834d107a0c6e072719ed
+      Hash: c822eec45bd7c5f6d7c8a2d82a6feb07
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
@@ -323,7 +349,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: a306e12d896ddcca949923c805691027
+      Hash: 8fbc134fd506d97c845cf2b715231396
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
@@ -437,7 +463,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: da4cc51a02ce84afe2cecd27cfe6997a
+      Hash: 27ec3360f0c0a6803ba71cc3106480b8
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
@@ -563,6 +589,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ins
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -597,7 +629,13 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: a1a5d4c218fc55e16e506e660dfa6827
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaterPosition
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/fajar/OneDrive - Bina Nusantara/Desktop/0.PTB/Akuarium IOT/jarfishV1.apk
+  playerPath: D:/Github/JarfishV1.apk
