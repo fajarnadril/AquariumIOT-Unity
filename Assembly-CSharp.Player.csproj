@@ -61,14 +61,15 @@
     <Compile Include="Assets\Scripts\AddUser.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Pompa.cs" />
+    <Compile Include="Assets\Scripts\WaterPosition.cs" />
     <Compile Include="Assets\Scripts\GetData.cs" />
     <Compile Include="Assets\Scripts\SendData.cs" />
     <Compile Include="Assets\Dead.cs" />
+    <Compile Include="Assets\DataUploader.cs" />
     <Compile Include="Assets\Scripts\ClassTest.cs" />
     <Compile Include="Assets\Scripts\VisualChangesPh.cs" />
     <Compile Include="Assets\Ins.cs" />
     <Compile Include="Assets\Scripts\UserData.cs" />
-    <Compile Include="Assets\Scripts\WaterPosition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
