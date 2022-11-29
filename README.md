@@ -1,5 +1,5 @@
 # AquariumIOT
- Aquarium IOT powered by Unity
+ Aquarium IOT (Jarfish) powered by Unity
  
  See App Video Trailer Here : https://www.youtube.com/shorts/4X1I4ri0EaE
 
