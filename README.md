@@ -11,5 +11,3 @@
 
 
 
-
-![thumbnail](https://user-images.githubusercontent.com/36891062/204991881-90871d91-b612-4981-a048-ddd50a763a51.png)
